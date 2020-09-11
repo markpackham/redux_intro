@@ -1,4 +1,4 @@
-import { compsoe, pipe } from "lodash/fp";
+import { compose, pipe } from "lodash/fp";
 import { Map } from "immutable";
 import { produce } from "immer";
 
