@@ -1,3 +1,6 @@
+// Learning Redux from https://www.youtube.com/watch?v=poQXNp9ItL4
+// Data outputted via console.log
+
 import store from "./store";
 import { bugAdded, bugResolved, bugRemoved } from "./actions";
 // state = reducer(state, action);
