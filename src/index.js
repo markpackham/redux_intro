@@ -1,5 +1,5 @@
 import store from "./store";
-import { bugAdded, bugRemoved } from "./actions";
+import { bugAdded, bugResolved, bugRemoved } from "./actions";
 // state = reducer(state, action);
 // notify the subscribers
 // state, dispatch & subscribe are the key parts of Redux
@@ -9,8 +9,7 @@ const unsubscribe = store.subscribe(() => {
 });
 
 store.dispatch(bugAdded("Bug 1"));
-
-unsubscribe();
-
+store.dispatch(bugResolved(1));
 store.dispatch(bugRemoved(1));
+unsubscribe();
 console.log(store.getState());
